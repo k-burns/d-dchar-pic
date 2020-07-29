@@ -7,7 +7,7 @@ h1{
   font-family: "Comic Sans MS", cursive, sans-serif;
   font-size:18px;
   color:#DC143C;
-  background-color:#555550;
+  background-color:Ivory;
   margin:10px;
   border-width:2px;
   border-type:groove;
@@ -28,11 +28,13 @@ h1{
 
 
 <script language="JavaScript">
-  let rChoice=["Elf", "Half-Elf", "Dragonborn", "Tiefling", "Half-Orc", "Human", "Halfling", "Dwarf", "Gnome"]
-  let cChoice=["Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock," "Wizard"]
-  let aChoice=["CG", "CN", "CE", "LG", "LN", "LE", "N", "NG", "NE"]
+ 
   func randomizer=(arr){
-  let ran = Math.floor(Math.random()*10)
-  return arr[ran]
+     let rChoice=["Elf", "Half-Elf", "Dragonborn", "Tiefling", "Half-Orc", "Human", "Halfling", "Dwarf", "Gnome"]
+     let cChoice=["Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock," "Wizard"]
+     let aChoice=["CG", "CN", "CE", "LG", "LN", "LE", "N", "NG", "NE"]
+     let ran = Math.floor(Math.random()*10)
+    return arr[ran]
+    document.getElementById("randomizer").innerHTML="You should play a "+ randomizer(rChoice) + " " + randomizer(cChoice) + " with " + randomizer(aChoice)+ " alignment";
   }
-  let char = randomizer(rChoice) + ", " + randomizer(cChoice) + ", " randomizer(aChoice)
+  
