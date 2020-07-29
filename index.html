@@ -6,8 +6,8 @@
 h1{
   font-family: "Comic Sans MS", cursive, sans-serif;
   font-size:18px
-  color:crimson;
-  background-color:Ivory;
+  color:#DC143C;
+  background-color:#555550;
   margin:10px;
   border-width:2px;
   border-type:groove;
@@ -22,7 +22,7 @@ h1{
 <form>
 <h1> D and D Chararacter Randomizer </h1>
 <strong> Roll Die, Don't Die! </strong>
-<button type="button" onclick = "randomizer()">Calculate</button>
+<button type="button" onclick = "randomizer()">Create</button>
 <button type="button" onclick="history.go(0);">Refresh</button>
 </form>
 
@@ -35,4 +35,4 @@ h1{
   let ran = Math.floor(Math.random()*10)
   return arr[ran]
   }
-  let char = randomizer(rChoice) + randomizer(cChoice) + randomizer(aChoice)
+  let char = randomizer(rChoice) + ", " + randomizer(cChoice) + ", " randomizer(aChoice)
