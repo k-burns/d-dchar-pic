@@ -48,17 +48,6 @@ h1{
 </form>
 
 
-<script language="JavaScript">
- 
-  function randomizer (arr){
-    let ranA= document.getElementByID("randomizer")
-     let rChoice=["Elf", "Half-Elf", "Dragonborn", "Tiefling", "Half-Orc", "Human", "Halfling", "Dwarf", "Gnome"]
-     let cChoice=["Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard"]
-     let aChoice=["CG", "CN", "CE", "LG", "LN", "LE", "N", "NG", "NE"]
-     let ran = Math.floor(Math.random()*arr.length)
-    return arr[ran]
-    ranA.innerText="You should play a "+ randomizer(rChoice) + " " + randomizer(cChoice) + " with " + randomizer(aChoice)+ " alignment";
-  }
-  </script>
+
   </body>
   </html>
