@@ -28,7 +28,7 @@ h1{
 <form>
 <h1> D and D Chararacter Randomizer </h1>
   <strong>Character: </strong>
-<label id="randomizer"></label>	
+  <h3 id="randomizer"> Character </h3>
 <strong> Roll Die, Don't Die! </strong>
 <button type="button" onclick = "randomizer()">Create</button>
 <button type="button" onclick="history.go(0);">Refresh</button>
@@ -38,12 +38,13 @@ h1{
 <script language="JavaScript">
  
   function randomizer (arr){
+    let ranA= document.getElementByID("randomizer")
      let rChoice=["Elf", "Half-Elf", "Dragonborn", "Tiefling", "Half-Orc", "Human", "Halfling", "Dwarf", "Gnome"]
      let cChoice=["Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard"]
      let aChoice=["CG", "CN", "CE", "LG", "LN", "LE", "N", "NG", "NE"]
      let ran = Math.floor(Math.random()*arr.length)
     return arr[ran]
-    document.getElementById("randomizer").innerHTML="You should play a "+ randomizer(rChoice) + " " + randomizer(cChoice) + " with " + randomizer(aChoice)+ " alignment";
+    ranA.innerText="You should play a "+ randomizer(rChoice) + " " + randomizer(cChoice) + " with " + randomizer(aChoice)+ " alignment";
   }
   </script>
   </body>
