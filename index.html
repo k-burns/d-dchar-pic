@@ -41,7 +41,7 @@ h1{
      let rChoice=["Elf", "Half-Elf", "Dragonborn", "Tiefling", "Half-Orc", "Human", "Halfling", "Dwarf", "Gnome"]
      let cChoice=["Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard"]
      let aChoice=["CG", "CN", "CE", "LG", "LN", "LE", "N", "NG", "NE"]
-     let ran = Math.floor(Math.random()*10)
+     let ran = Math.floor(Math.random()*arr.length)
     return arr[ran]
     document.getElementById("randomizer").innerHTML="You should play a "+ randomizer(rChoice) + " " + randomizer(cChoice) + " with " + randomizer(aChoice)+ " alignment";
   }
